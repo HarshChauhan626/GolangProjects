@@ -1,3 +1,16 @@
+// Below is a production-style implementation of a worker pool in Go that satisfies all of your requirements:
+
+// ✅ Fixed number of workers
+// ✅ Buffered queue
+// ✅ Queue full → reject new jobs (non-blocking)
+// ✅ Retry failed jobs
+// ✅ Max retry limit
+// ✅ Failed jobs stored separately
+// ✅ Producer keeps generating jobs
+// ✅ Workers keep running forever
+// ✅ No goroutine leaks
+// ✅ Graceful shutdown using context
+
 package main
 
 import (
